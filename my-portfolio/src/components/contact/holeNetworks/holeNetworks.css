@@ -1,0 +1,32 @@
+.hole-networks-container{
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        left: 50% ;
+        transform: translateX(-50%);
+        width: auto;
+        z-index: 999;
+        background: var(--color-violet-ligth);
+        padding: 12px 20px;
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0px 5px var(--color-violet-ligther);
+        gap: 10px;
+        align-items: center;
+}
+
+.hole-networks-container a{
+    height: 30px;
+    text-decoration: none;
+}
+
+.hole-networks-container p{
+    margin: 0;
+    color: var(--color-white-violet);
+}
+
+@media (min-width: 768px) {
+    .hole-networks-container {
+        display: none;
+    }
+}

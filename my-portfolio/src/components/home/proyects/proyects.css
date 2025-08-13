@@ -1,0 +1,133 @@
+.project-item{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+}
+
+.project-item a{
+  margin: auto;
+  cursor: pointer;
+}
+
+.project-item h3{
+  margin: 0;
+  position: relative;
+  color: white; /* Color del texto */
+  z-index: 1;
+  padding-left: 10px;
+  padding-right: 30px; /* Espacio para que el texto no se corte */
+  margin-right: -20px;
+  width: fit-content;
+}
+
+.project-item h3 a{
+  text-decoration: none;
+  color: var(--color-white-violet);
+  cursor: pointer;
+}
+  
+.project-item h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:-webkit-fill-available;
+  height: 100%;
+  background: var(--bg-color);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  z-index: -1;
+  animation: revealBackground 3s ease-in-out forwards;
+}
+
+.project-item h4{
+  margin-bottom: 0;
+}
+
+.project-item h5{
+  margin: 10px 5px;
+}
+
+.project-item img{
+    width: 300px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.project-item ul{
+  list-style: none;
+  padding: 0;       
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .project-item{
+    max-width: 700px;
+  }
+
+  .project-item div{
+    max-width: 600px;
+  }
+
+  .project-item a{
+    align-self: flex-end;
+    margin: initial;
+  }
+
+  .project-item img{
+    width: 400px;
+    align-self: flex-end;
+    margin: initial;
+    margin-bottom: 30px;
+  }
+
+  .project-item ul{
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    list-style:circle;
+    padding-left: 40px;
+    padding-top: 20px;       
+  }
+}
+
+@media (min-width: 1024px){
+  .proyects-container{
+    padding: 100px 0 0px 0;
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .project-item{
+    max-width: 1000px;
+  }
+
+  .project-item div{
+    max-width: 750px;
+  }
+
+  .project-item a{
+    align-self: flex-end;
+    margin: initial;
+  }
+
+  .project-item img{
+    width: 500px;
+    align-self: flex-end;
+    margin: initial;
+    margin-bottom: 30px;
+  }
+
+  .project-item ul{
+    flex-direction: column;
+    position: absolute;
+    gap: 5px;
+    list-style:circle;
+    padding-left: 40px;   
+    padding-top: 20px;           
+  }
+}

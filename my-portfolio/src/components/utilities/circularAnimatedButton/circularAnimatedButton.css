@@ -1,0 +1,66 @@
+.circularAnimatedButton {
+    color: white; /* text-white */
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    z-index: 10;
+    transition: color 2s ease; /* duration-1000 */
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px;
+}
+
+.circularAnimatedButton-link{
+    text-decoration: none;
+    width: fit-content;
+}
+
+.circularAnimatedButton > * {
+    text-decoration: none;
+    color: white;
+}
+
+.button-circle-1, .button-circle-2 {
+    position: absolute;
+    border-radius: 9999px; /* rounded-full */
+    width: 110%; /* w-36 */
+    height: 8rem; /* h-36 */
+    left: -0.5rem; /* -left-2 */
+    top: -2.5rem; /* -top-10 */
+    z-index: -10;
+    transform: scale(0);
+    transition: all 0.7s ease;
+    origin: center;
+}
+
+.button-circle-2 {
+    transition-duration: 0.5s; /* group-hover:duration-700 */
+}
+
+.circularAnimatedButton:hover .button-circle-1, .circularAnimatedButton:hover .button-circle-2 {
+    transform: scale(1);
+}
+
+.circularAnimatedButton:hover .button-circle-1 {
+    transition-duration: 0.5s; /* group-hover:duration-500 */
+}
+
+.circularAnimatedButton:hover .button-circle-2 {
+    transition-duration: 1s; /* group-hover:duration-700 */
+}
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    .circularAnimatedButton{
+        padding: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .circularAnimatedButton{
+        font-size: 18px;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,38 @@
+.left-side-networks-container{
+    background-color: var(--color-violet-ligth);
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    bottom: 0;
+    z-index: 1;
+    left: 2.5%;
+    bottom: -20px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.left-side-networks-container a{
+    height: 30px;
+}
+
+.left-side-networks-container hr{
+    height: 20px;
+}
+
+.left-side-networks-container img{
+    padding: 1.5px;
+}
+
+.left-side-networks-container img:hover{
+    zoom: 1.1;
+    padding: 0;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .left-side-networks-container{
+        display: flex;
+    }
+}

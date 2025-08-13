@@ -1,0 +1,159 @@
+@keyframes revealBackground {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 92% 0, 99% 100%, 0 100%);
+  }
+}
+
+:root {
+  font-family: "Poppins", sans-serif ;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  --color-violet: #460182;
+  --color-violet-ligth: #662D91;
+  --color-violet-gray: #313131;
+  --color-violet-ligther: #7e36b4;
+  --color-violet-dark: #1E0035;
+  --color-violet-darker: #0f011b;
+  --color-white-violet: #fbf7fe;
+
+	--color-gray-ligther: #e3e3e3;
+	--color-gray-blue-dark: #3c4d66;
+	--color-gray-blue-ligther: #9ab1cc;
+
+  --color-black: #171717;
+
+  background-color: var(--color-black);
+  color: var(--color-white-violet);
+}
+
+body {
+  margin: 0;
+  font-family:"Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+b{
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+
+h1{
+  font-size: 36px;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+h3{
+  font-weight: 200;
+  font-size: 22px;
+}
+
+h4{
+  font-weight: 200;
+  font-size: 14px;
+}
+
+h5,li{
+  font-weight: 200;
+  font-size: 12px;
+}
+
+p{
+  font-size: 16px;
+}
+
+span{
+  font-size: 16px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+main > * {
+  width: 80%;
+
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  h1{
+    font-size: 42px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  h5,li{
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px){
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 30px;
+  }
+
+  h3{
+    font-size: 22px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  h5,li{
+    font-size: 14px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+}
