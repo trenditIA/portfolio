@@ -1,0 +1,44 @@
+.languageSwitcher-container{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.languageSwitcher-container button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 13.6px;
+    background-color: var(--color-violet-ligth);
+    border: none;
+    color: var(--color-white-violet);
+    font-weight: 600;
+}
+
+.languageSwitcher-container section{
+    background: var(--color-white-violet);
+    border: 2px solid var(--color-violet-ligth);
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    overflow: hidden;
+    color: var(--color-violet-ligth);
+}
+
+.languageSwitcher-container div{
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.languageSwitcher-container img{
+    width: 30px;
+    height: 21px; 
+}
+
+@media (min-width: 768px)  {
+    .languageSwitcher-container button {
+        font-size: 16px;
+    }
+}

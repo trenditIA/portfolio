@@ -1,0 +1,77 @@
+{
+    "contact": {
+        "button" : "Let's talk",
+        "title" : "Contact me and let's get to work."
+    },
+    "expertise" : {
+        "currently" : "Currently",
+        "description" : "I believe in continuous learning as the foundation for innovating and staying relevant in a constantly evolving technological environment. I am always seeking new challenges that allow me to grow and add value to every project.",
+        "titleInit" : "My",
+        "titleFinish" : "expertise",
+        "titleDescription" : "Some of the tools I use for daily development...",
+        "sectionLabel" : "Background",
+        "studies" : "Studies",
+        "studiesDescription" : "~ The driving force behind my curiosity, motivating me to learn more about the world and thereby expanding my horizons, perspectives, and capabilities.",
+        "studyOne" : {
+            "name" : "Master’s in Management and Organization Administration",
+            "university" : "Blas Pascal University",
+            "knowledge" : "To understand the strategic management of technology companies and develop skills to lead projects and optimize resources."
+        },
+        "studyTwo" : {
+            "name" : "UX/UI Leadership",
+            "university" : "Siglo XXI University",
+            "knowledge" : "I implement user-centered methodologies, collaborating efficiently with designers and multidisciplinary teams."
+        },
+        "studyThree" : {
+            "name" : "Software Engineering",
+            "university" : "Blas Pascal University",
+            "knowledge" : "Strong foundation in software development, algorithms, databases, and systems, applicable to innovative solutions."
+        },
+        "work" : "Work",
+        "workDescription" : "~ A tool that consolidates and deepens my knowledge, transforming experience into practical and lasting learning.",
+        "workOne" : {
+            "position" : "Project Manager / Full Stack Developer",
+            "company" : "AxonQbit",
+            "activity" : "I lead multidisciplinary teams, coordinate web and application projects, participate in defining requirements with stakeholders, and work as a full-stack developer."
+        },
+        "workTwo" : {
+            "position" : "Full Stack Software Engineer",
+            "company" : "TrendIT SRL",
+            "activity" : "I developed full-stack web applications, integrated data scraping, worked under agile methodologies (SCRUM), and managed projects using JIRA."
+        },
+        "workThree" : {
+            "position" : "Junior Full Stack Developer",
+            "company" : "TrendIT SRL",
+            "activity" : "Data scraping (Selenium, Python), REST APIs (Node.js), and Front-end (React). Proficient in agile methodologies (SCRUM) and project management tools (JIRA)."
+        }
+    },
+    "hero": {
+        "title": "Software Engineer",
+        "position": "- Full stack developer",
+        "description": "I am passionate about challenges and continuous learning to improve myself both personally and professionally.",
+        "downloadCV": "Download CV"
+    },
+    "languageSwitcher" : {
+        "buttonLabel": "Language"
+    },
+    "projects" : {
+        "sectionLabel" : "Developments",
+        "description" : "Starting a company allowed me to lead three strategic projects that strengthened the company's technological identity and value proposition. I coordinated multidisciplinary teams, ensuring quality, alignment with objectives, and significant commercial impact.",
+        "titleInit" : "My",
+        "titleFinish" : "proyects",
+        "projects" : {
+            "axonqbit" : {
+                "description" : "Website to position the company as an innovative software factory. I defined content, supervised design and development, ensuring a professional image aimed at attracting clients.",
+                "type" : "Langing page"
+            },
+            "axonscopeWeb" : {
+                "description" : "Page to showcase AxonScope, highlighting its ability to extract data from websites and APIs to compare prices and generate quotes. I led the team to ensure clarity, consistency, and commercial appeal.",
+                "type" : "Langing page"
+            },
+            "axonscopeApp" : {
+                "description" : "Platform that automates price collection and analysis, generating accurate reports and quotes. I led the design, development, and integration, validating with stakeholders to optimize results. Try it by logging in on the website with the user 'prueba@axonscope.com' and password 'demoPass'.",
+                "type" : "Web Application"
+            }
+        }
+    }
+}

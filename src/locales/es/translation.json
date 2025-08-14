@@ -1,0 +1,76 @@
+{
+    "contact": {
+        "button" : "Hablemos",
+        "title" : "Contactame y comencemos a trabajar"
+    },
+    "expertise" : {
+        "currently" : "Actualidad",
+        "description" : "Creo en la formación continua como base para innovar y mantenerme vigente en un entorno tecnológico en constante cambio. Busco siempre nuevos desafíos que me permitan crecer y aportar valor en cada proyecto.",
+        "titleInit" : "Mi",
+        "titleFinish" : "especialización",
+        "titleDescription" : "Algunas de las herramientas que uso para desarrollar a diario...",
+        "sectionLabel" : "Trayectoria",
+        "studies" : "Estudios",
+        "studiesDescription" : "~ Motor que impulsa mi curiosidad y me motiva a aprender más sobre el mundo, ampliando asi mis horizontes, perspectivas y capacidades.",
+        "studyOne" : {
+            "name" : "Maestria en gestion y administracion de organizaciones",
+            "university" : "Universidad Blas Pascal",
+            "knowledge" : "Para comprender la gestión estratégica de empresas tecnológicas y desarrollar habilidades para liderar proyectos y optimizar recursos."
+        },
+        "studyTwo" : {
+            "name" : "Liderazgo UX/UI",
+            "university" : "Universidad Siglo XXI",
+            "knowledge" : "Integro metodologías centradas en el usuario, colaborando eficientemente con diseñadores y equipos multidisciplinarios."
+        },
+        "studyThree" : {
+            "name" : "Ingenieria informatica",
+            "university" : "Universidad Blas Pascal",
+            "knowledge" : "Base sólida en desarrollo de software, algoritmos, bases de datos y sistemas, aplicable a soluciones innovadoras."
+        },
+        "work" : "Trabajos",
+        "workDescription" : "~ Herramienta que consolida y profundiza mis conocimientos, transformando la experiencia en aprendizaje práctico y duradero.",
+        "workOne" : {
+            "position" : "Director de proyecto / Desarrollador full stack",
+            "company" : "AxonQbit",
+            "activity" : "Lidero equipos multidisciplinarios, coordino proyectos web y aplicaciones, participo en definición de requerimientos junto a los stakeholders y desarrollo full stack."
+        },
+        "workTwo" : {
+            "position" : "Ingeniero de software Full Stack",
+            "company" : "TrendIT SRL",
+            "activity" : "Desarrollé aplicaciones web full stack, integré scraping de datos, trabajé bajo metodologías ágiles (SCRUM) y gestioné proyectos con JIRA."
+        },
+        "workThree" : {
+            "position" : "Desarrollador Full Stack JR",
+            "company" : "TrendIT SRL",
+            "activity" : "Scraping de datos (Selenium, Python), APIs REST (Node.js) y Front-end (React). Manejo de metodologías ágiles (SCRUM) y herramientas de gestión (JIRA)."
+        }
+    },
+    "hero": {
+        "title": "Ingeniero informático",
+        "position": "Desarrollador Full stack",
+        "description": "Me apasionan los desafios y el aprender constante para superarme como persona y profesional.",
+        "downloadCV": "Descargar CV"
+    },
+    "languageSwitcher" : {
+        "buttonLabel": "Lenguaje"
+    },
+    "projects" : {
+        "sectionLabel" : "Desarrollos",
+        "description" : "Crear una sociedad me permitió liderar tres proyectos estratégicos que consolidaron la identidad y propuesta tecnológica de la empresa. Coordiné equipos multidisciplinarios, asegurando calidad, alineación con objetivos y alto impacto comercial.",
+        "titleInit" : "Mis",
+        "titleFinish" : "proyectos",
+        "projects" : {
+            "axonqbit" : {
+                "description" : "Sitio web para posicionar a la empresa como software factory innovadora. Definí contenidos, supervisé el diseño y el desarrollo, garantizando una imagen profesional y orientada a captar clientes.",
+                "type" : "Langing page"
+            },
+            "axonscopeWeb" : {
+                "description" : "Página para presentar AxonScope, destacando su capacidad de extraer datos de webs y APIs para comparar precios y generar cotizaciones. Dirigí el equipo para asegurar claridad, coherencia y atractivo comercial."
+            },
+            "axonscopeApp" : {
+                "description" : "Plataforma que automatiza la recopilación y análisis de precios, generando reportes y cotizaciones precisas. Lideré el diseño, desarrollo e integración, validando con stakeholders para optimizar resultados. Probalo ingresando a la web con el usuario 'prueba@axonscope.com' y la contraseña 'demoPass'.",
+                "type" : "Aplicación web"
+            }
+        }
+  }
+}

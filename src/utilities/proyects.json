@@ -1,6 +1,7 @@
 {
     "projects": [
         {
+            "key": "axonqbit",
             "title": "AxonQbit",
             "description": "Sitio web para posicionar a la empresa como software factory innovadora. Definí contenidos, supervisé el diseño y el desarrollo, garantizando una imagen profesional y orientada a captar clientes.",
             "type": "Langing page",
@@ -10,7 +11,8 @@
             "link" : "https://www.axonqbit.com/"
         },
         {
-            "title": "AxonScope [Web informativa]",
+            "key": "axonscopeWeb",
+            "title": "AxonScope",
             "description": "Página para presentar AxonScope, destacando su capacidad de extraer datos de webs y APIs para comparar precios y generar cotizaciones. Dirigí el equipo para asegurar claridad, coherencia y atractivo comercial.",
             "type": "Langing page",
             "technologies": ["React", "JavaScript"],
@@ -19,7 +21,8 @@
             "link" : "https://axonscope.com/"
         },
         {
-            "title": "AxonScope [Aplicación web]",
+            "key": "axonscopeApp",
+            "title": "AxonScope",
             "description": "Plataforma que automatiza la recopilación y análisis de precios, generando reportes y cotizaciones precisas. Lideré el diseño, desarrollo e integración, validando con stakeholders para optimizar resultados. Probalo ingresando a la web con el usuario 'prueba@axonscope.com' y la contraseña 'demoPass'.",
             "type": "Web application",
             "technologies": ["Python", "React", "JavaScript", "Node.js", "MongoDB"],

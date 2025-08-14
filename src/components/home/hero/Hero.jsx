@@ -2,23 +2,26 @@ import React from 'react'
 
 import "./hero.css"
 import CircularAnimatedButton from '../../utilities/circularAnimatedButton/CircularAnimatedButton'
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className='hero-container'>
         <section className='hero-intro'>
             <img src="https://i.ibb.co/nMWQLFWd/myFace.jpg" alt='me'/>
             <h1>Oviedo, Lucas</h1>
-            <h3>Ingeniero informático - <b>Full stack developer</b></h3>
+            <h3>{t("hero.title")}<br/><b>{t("hero.position")}</b></h3>
         </section>
         <section className='hero-info'>
-            <p>Me apasionan los desafios y el aprender constante para superarme como persona y profesional.</p>
+            <p>{t("hero.description")}</p>
             <div>
                 <CircularAnimatedButton
                     primaryColor="var(--color-violet-ligth)"
                     firstCircleColor="var(--color-violet-ligther)" 
                     secondCircleColor="var(--color-violet)"
-                    title="Descargar CV"
+                    title={t("hero.downloadCV")}
                 />
             </div>
         </section>
