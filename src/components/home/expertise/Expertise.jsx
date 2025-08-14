@@ -16,38 +16,38 @@ export const Expertise = () => {
       <h3>{t("expertise.studies")}</h3>
       <h5>{t("expertise.studiesDescription")}</h5>
       <ul>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.studyOne.name")}</b></span><br/>{t("expertise.studyOne.university")} (2025-{t("expertise.currently")})</li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.studyOne.name")}</b></span><br/>{t("expertise.studyOne.university")} (2025-{t("expertise.currently")})</div>
           <h5>{t("expertise.studyOne.knowledge")}</h5>
-        </div>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.studyTwo.name")}</b></span><br/>{t("expertise.studyTwo.university")} (2024)</li>
+        </li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.studyTwo.name")}</b></span><br/>{t("expertise.studyTwo.university")} (2024)</div>
           <h5>{t("expertise.studyTwo.knowledge")}</h5>
-        </div>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.studyThree.name")}</b></span><br/>{t("expertise.studyThree.university")} (2017-2023)</li>
+        </li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.studyThree.name")}</b></span><br/>{t("expertise.studyThree.university")} (2017-2023)</div>
           <h5>{t("expertise.studyThree.knowledge")}</h5>
-        </div>
+        </li>
       </ul>
 
       <h3>{t("expertise.work")}</h3>
       <h5>{t("expertise.workDescription")}</h5>
       <ul>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.workOne.position")}</b></span><br/> {t("expertise.workOne.company")} (09/2024-{t("expertise.currently")})</li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.workOne.position")}</b></span><br/> {t("expertise.workOne.company")} (09/2024-{t("expertise.currently")})</div>
           <h5>{t("expertise.workOne.activity")}</h5>
-        </div>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.workTwo.position")}</b></span><br/>{t("expertise.workTwo.company")} (10/2022-08/2024)</li>
+        </li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.workTwo.position")}</b></span><br/>{t("expertise.workTwo.company")} (10/2022-08/2024)</div>
           <h5>{t("expertise.workTwo.activity")}</h5>
-        </div>
-        <div data-animate="fade-in-up">
-          <li><span><b>{t("expertise.workThree.position")}</b></span><br/>{t("expertise.workThree.company")} (10/2021-10/2022)</li>
+        </li>
+        <li data-animate="fade-in-up">
+          <div><span><b>{t("expertise.workThree.position")}</b></span><br/>{t("expertise.workThree.company")} (10/2021-10/2022)</div>
           <h5>{t("expertise.workThree.activity")}</h5>
-        </div>
+        </li>
       </ul>
       <h2>{t("expertise.titleInit")} <b>{t("expertise.titleFinish")}</b></h2>
-      <h4>{t("expertise.titleDescription")}</h4>
+      <h6>{t("expertise.titleDescription")}</h6>
       <div className='expertise-technologys'>
         {technologies.technologies.map((tech) => {
           return (

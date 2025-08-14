@@ -18,7 +18,7 @@ export const Proyects = () => {
         <h2>{t("projects.titleInit")} <b>{t("projects.titleFinish")}</b></h2>
         {proyects.projects.map((project) => {
           return (
-            <section key={project.name} className='project-item' style={{ '--bg-color': project.backgroundColor }}>
+            <section key={project.key} className='project-item' style={{ '--bg-color': project.backgroundColor }}>
               <div data-animate="fade-in-right">
                 <h5>{t(`projects.projects.${project.key}.type`)}</h5>
                 <h3>
@@ -28,8 +28,8 @@ export const Proyects = () => {
                 </h3>
                 <h4>{t(`projects.projects.${project.key}.description`)}</h4>
                 <ul>
-                  {project.technologies.map((tech, index) => (
-                    <li key={index}>{tech}</li>
+                  {project.technologies.map((tech) => (
+                    <li key={tech}>{tech}</li>
                   ))}
                 </ul>
               </div>

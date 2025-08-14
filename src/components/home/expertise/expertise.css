@@ -42,11 +42,13 @@
     margin-top: 50px;
 }
 
-.expertise-container h4{
+.expertise-container h4,
+.expertise-container h6{
     margin-top: 0;
 }
 
-.expertise-technology-item h4{
+.expertise-technology-item h4,
+.expertise-technology-item h6{
     margin: 0;
     color: var(--color-white-violet);
     margin-top: 10px;

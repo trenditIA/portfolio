@@ -27,7 +27,7 @@
 
 .hero-intro img{
     width: 150px;
-    height: auto;
+    height: 150px;
     margin-bottom: 20px;
     border-radius: 50%;
     border: 12px solid var(--color-violet-ligth);
@@ -55,6 +55,7 @@
 
     .hero-intro img{
         width: 200px;
+        height: 200px;
     } 
 }
 
@@ -75,5 +76,6 @@
 
     .hero-intro img{
         width: 250px;
+        height: 250px;
     } 
 }
