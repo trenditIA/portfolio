@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <div className='hero-container'>
         <section className='hero-intro'>
-            <img src="https://i.ibb.co/nMWQLFWd/myFace.jpg" alt='me'/>
+            <img src="https://i.ibb.co/pvJzJyBB/myFace.webp" alt='me'/>
             <h1>Oviedo, Lucas</h1>
             <h3>{t("hero.title")}<br/><b>{t("hero.position")}</b></h3>
         </section>
