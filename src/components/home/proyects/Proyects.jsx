@@ -4,9 +4,11 @@ import { SectionLabel } from '../../utilities/sectionLabel/SectionLabel'
 
 import proyects from "../../../utilities/proyects.json"
 import { useTranslation } from "react-i18next";
+import useScrollAnimations from "../../../hooks/useScrollAnimation";
 
 export const Proyects = () => {
   const { t } = useTranslation();
+  useScrollAnimations();
 
   return (
     <div className='proyects-container'>
@@ -17,7 +19,7 @@ export const Proyects = () => {
         {proyects.projects.map((project) => {
           return (
             <section key={project.name} className='project-item' style={{ '--bg-color': project.backgroundColor }}>
-              <div>
+              <div data-animate="fade-in-right">
                 <h5>{t(`projects.projects.${project.key}.type`)}</h5>
                 <h3>
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
@@ -31,7 +33,7 @@ export const Proyects = () => {
                   ))}
                 </ul>
               </div>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" data-animate="fade-in-left">
                 <img src={project.image} alt={project.title} style={{border: `10px solid ${project.backgroundColor}`}}/>
               </a>
             </section>

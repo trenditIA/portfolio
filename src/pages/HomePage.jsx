@@ -7,7 +7,6 @@ import { Hero } from "../components/home/hero/Hero"
 import { Proyects } from "../components/home/proyects/Proyects"
 import { LanguageSwitcher } from "../components/utilities/languageSwitcher/LanguageSwitcher"
 
-
 const HomePage = () => {
   return (
     <div>

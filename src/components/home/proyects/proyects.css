@@ -38,7 +38,10 @@
   background: var(--bg-color);
   clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
   z-index: -1;
-  animation: revealBackground 3s ease-in-out forwards;
+}
+
+.project-item h3.animate-done::before {
+  animation: revealBackground 2s ease-in-out forwards;
 }
 
 .project-item h4{
