@@ -6,8 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter } from 'react-router-dom';
 
-
-import './i18n'; // ← esto es clave
+import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
