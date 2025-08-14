@@ -49,7 +49,8 @@
         "title": "Ingeniero informático",
         "position": "Desarrollador Full stack",
         "description": "Me apasionan los desafios y el aprender constante para superarme como persona y profesional.",
-        "downloadCV": "Descargar CV"
+        "downloadCV": "Descargar CV",
+        "linkCV": "/portfolio/cv/CV_LucasOviedo_ES.pdf"
     },
     "languageSwitcher" : {
         "buttonLabel": "Lenguaje"

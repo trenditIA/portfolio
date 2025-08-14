@@ -30,9 +30,9 @@
         "work" : "Work",
         "workDescription" : "~ A tool that consolidates and deepens my knowledge, transforming experience into practical and lasting learning.",
         "workOne" : {
-            "position" : "Project Manager / Full Stack Developer",
+            "position" : "Project Manager / Full Stack Engineer",
             "company" : "AxonQbit",
-            "activity" : "I lead multidisciplinary teams, coordinate web and application projects, participate in defining requirements with stakeholders, and work as a full-stack developer."
+            "activity" : "I lead multidisciplinary teams, coordinate web and application projects, participate in defining requirements with stakeholders, and work as a full-stack engineer."
         },
         "workTwo" : {
             "position" : "Full Stack Software Engineer",
@@ -47,9 +47,10 @@
     },
     "hero": {
         "title": "Software Engineer",
-        "position": "- Full stack developer",
+        "position": "- Full stack Engineer",
         "description": "I am passionate about challenges and continuous learning to improve myself both personally and professionally.",
-        "downloadCV": "Download CV"
+        "downloadCV": "Download CV",
+        "linkCV": "/portfolio/cv/CV_LucasOviedo_EN.pdf"
     },
     "languageSwitcher" : {
         "buttonLabel": "Language"

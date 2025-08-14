@@ -31,7 +31,7 @@ export const Expertise = () => {
         <h5>{t("expertise.workOne.activity")}</h5>
         <li><span><b>{t("expertise.workTwo.position")}</b></span><br/>{t("expertise.workTwo.company")} (10/2022-08/2024)</li>
         <h5>{t("expertise.workTwo.activity")}</h5>
-        <li><span><b>{t("expertise.workThree.position")}</b></span><br/>{t("expertise.workThree.company")}L (10/2021-10/2022)</li>
+        <li><span><b>{t("expertise.workThree.position")}</b></span><br/>{t("expertise.workThree.company")} (10/2021-10/2022)</li>
         <h5>{t("expertise.workThree.activity")}</h5>
       </ul>
 

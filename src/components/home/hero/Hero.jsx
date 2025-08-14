@@ -17,12 +17,18 @@ export const Hero = () => {
         <section className='hero-info'>
             <p>{t("hero.description")}</p>
             <div>
+                <a 
+                    href={t("hero.linkCV")}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
                 <CircularAnimatedButton
                     primaryColor="var(--color-violet-ligth)"
                     firstCircleColor="var(--color-violet-ligther)" 
                     secondCircleColor="var(--color-violet)"
                     title={t("hero.downloadCV")}
                 />
+                </a>
             </div>
         </section>
     </div>
