@@ -1,11 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { projects, t } from "@/data/portfolio";
 import { useLanguage } from "@/context/language-context";
 import { getUi } from "@/messages/ui";
-import { BrowserMockup } from "./BrowserMockup";
 
 export function ProjectsSection() {
   const { locale } = useLanguage();
@@ -13,7 +13,7 @@ export function ProjectsSection() {
 
   return (
     <section
-      id="proyectos"
+      id="projects"
       className="scroll-mt-24 border-b border-slate-200/80 bg-slate-50 dark:border-slate-800/60 dark:bg-slate-950"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -33,10 +33,21 @@ export function ProjectsSection() {
           {projects.map((project) => (
             <article
               key={project.id}
-              className="grid gap-8 rounded-2xl border border-slate-200/90 bg-white/70 p-6 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/20 lg:grid-cols-2 lg:items-center lg:gap-12 lg:p-8"
+              className="grid gap-8 rounded-2xl border border-slate-200/90 bg-white/70 p-6 shadow-sm dark:border-slate-800/80 dark:bg-slate-900/20 lg:grid-cols-2 lg:items-start lg:gap-12 lg:p-8"
             >
-              <div className="order-2 lg:order-1">
-                <BrowserMockup src={project.image} alt={project.name} />
+              <div className="order-2 min-w-0 lg:order-1">
+                <div className="overflow-hidden rounded-xl border border-slate-200 bg-slate-100/50 shadow-[0_24px_80px_-32px_rgba(15,23,42,0.15)] ring-1 ring-slate-200/80 dark:border-slate-800 dark:bg-slate-900/40 dark:shadow-[0_24px_80px_-32px_rgba(15,23,42,0.9)] dark:ring-slate-800/80">
+                  <Image
+                    src={project.image}
+                    alt={project.name}
+                    width={1920}
+                    height={1080}
+                    sizes="(min-width: 1024px) min(50vw - 4rem, 36rem), calc(100vw - 3rem)"
+                    className="h-auto w-full max-w-full"
+                    style={{ width: "100%", height: "auto" }}
+                    unoptimized
+                  />
+                </div>
               </div>
               <div className="order-1 flex flex-col gap-4 lg:order-2">
                 <h3 className="font-display text-2xl font-bold text-slate-900 dark:text-slate-50">

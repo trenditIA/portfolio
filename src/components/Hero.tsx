@@ -5,9 +5,10 @@ import Link from "next/link";
 import { useCallback, useState } from "react";
 import { LINKS } from "@/data/portfolio";
 import { useLanguage } from "@/context/language-context";
+import { publicUrl } from "@/lib/publicUrl";
 import { getUi } from "@/messages/ui";
 
-const PROFILE_PRIMARY = "/image_0.png";
+const PROFILE_PRIMARY = publicUrl("/image_0.png");
 const PROFILE_FALLBACK = "https://i.ibb.co/pvJzJyBB/myFace.webp";
 
 export function Hero() {
@@ -21,12 +22,12 @@ export function Hero() {
 
   return (
     <section
-      id="sobre-mi"
+      id="about"
       className="scroll-mt-24 border-b border-slate-200/80 bg-gradient-to-b from-slate-50 to-slate-100 dark:border-slate-800/60 dark:from-slate-950 dark:to-slate-950"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-[minmax(0,280px)_1fr] md:items-center md:gap-12 md:py-24 lg:px-8">
         <div className="mx-auto flex max-w-xs flex-col items-center text-center md:mx-0 md:items-start md:text-left">
-          <div className="relative mb-6 h-40 w-40 shrink-0 sm:h-48 sm:w-48">
+          <div className="relative mb-6 h-40 w-40 shrink-0 rounded-full ring-4 ring-[#7c3aed]/85 sm:h-48 sm:w-48">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 ring-2 ring-slate-200 transition-[box-shadow] duration-300 hover:shadow-[0_0_0_1px_#7c3aed33,0_0_40px_-10px_#7c3aed55] dark:from-slate-800 dark:to-slate-900 dark:ring-slate-800 dark:hover:shadow-[0_0_0_1px_#7c3aed33,0_0_40px_-10px_#7c3aed66]" />
             <Image
               src={profileSrc}

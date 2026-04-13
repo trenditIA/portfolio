@@ -10,7 +10,7 @@ export function ExperienceSection() {
 
   return (
     <section
-      id="experiencia"
+      id="experience"
       className="scroll-mt-24 border-b border-slate-200/80 bg-slate-50 dark:border-slate-800/60 dark:bg-slate-950"
     >
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">

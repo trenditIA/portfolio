@@ -105,11 +105,10 @@ function LanguageMenu() {
             <button
               type="button"
               onClick={() => pick("es")}
-              className={`flex w-full items-center px-3 py-2 text-left transition hover:bg-slate-100 dark:hover:bg-slate-800 ${
-                locale === "es"
-                  ? "text-[#7c3aed]"
-                  : "text-slate-700 dark:text-slate-200"
-              }`}
+              className={`flex w-full items-center px-3 py-2 text-left transition hover:bg-slate-100 dark:hover:bg-slate-800 ${locale === "es"
+                ? "text-[#7c3aed]"
+                : "text-slate-700 dark:text-slate-200"
+                }`}
             >
               {m.language.es}
             </button>
@@ -118,11 +117,10 @@ function LanguageMenu() {
             <button
               type="button"
               onClick={() => pick("en")}
-              className={`flex w-full items-center px-3 py-2 text-left transition hover:bg-slate-100 dark:hover:bg-slate-800 ${
-                locale === "en"
-                  ? "text-[#7c3aed]"
-                  : "text-slate-700 dark:text-slate-200"
-              }`}
+              className={`flex w-full items-center px-3 py-2 text-left transition hover:bg-slate-100 dark:hover:bg-slate-800 ${locale === "en"
+                ? "text-[#7c3aed]"
+                : "text-slate-700 dark:text-slate-200"
+                }`}
             >
               {m.language.en}
             </button>
@@ -138,42 +136,42 @@ export function Navbar() {
   const m = getUi(locale);
 
   const navItems = [
-    { href: "#sobre-mi", label: m.nav.about },
-    { href: "#proyectos", label: m.nav.projects },
-    { href: "#experiencia", label: m.nav.experience },
-    { href: "#estudios", label: m.nav.education },
-    { href: "#contacto", label: m.nav.contact },
+    { href: "#about", label: m.nav.about },
+    { href: "#projects", label: m.nav.projects },
+    { href: "#experience", label: m.nav.experience },
+    { href: "#education", label: m.nav.education },
+    { href: "#contact", label: m.nav.contact },
   ] as const;
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/90 bg-white/85 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-950/80">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
-        <Link
-          href="#sobre-mi"
-          className="shrink-0 font-display text-sm font-bold tracking-tight text-slate-900 transition-colors hover:text-[#7c3aed] dark:text-slate-50 sm:text-base"
-        >
-          Lucas Oviedo
-        </Link>
+      <nav className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6 lg:px-8">
+        <div className="flex w-full items-center justify-between gap-3 sm:contents">
+          <Link
+            href="#about"
+            className="shrink-0 font-display text-sm font-bold tracking-tight text-slate-900 transition-colors hover:text-[#7c3aed] dark:text-slate-50 sm:order-1 sm:text-base"
+          >
+            Lucas Oviedo
+          </Link>
 
-        <div className="flex min-w-0 flex-1 flex-wrap items-center justify-end gap-2 sm:gap-3">
-          <ul className="flex flex-wrap items-center justify-end gap-0.5 text-[11px] sm:gap-1 sm:text-sm">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="rounded-md px-1.5 py-1.5 text-slate-600 transition-colors hover:bg-slate-100 hover:text-[#7c3aed] dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-[#7c3aed] sm:px-3"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex shrink-0 items-center gap-1.5 border-l border-slate-200 pl-2 dark:border-slate-800 sm:gap-2 sm:pl-3">
+          <div className="flex shrink-0 items-center gap-1.5 sm:order-3 sm:gap-2 sm:border-l sm:border-slate-200 sm:pl-3 dark:sm:border-slate-800">
             <LanguageMenu />
             <ThemeToggle />
           </div>
         </div>
+
+        <ul className="flex w-full min-w-0 flex-wrap items-center justify-start gap-0.5 border-t border-slate-200/90 pt-3 text-[11px] dark:border-slate-800/80 sm:order-2 sm:flex-1 sm:justify-end sm:border-t-0 sm:pt-0 sm:gap-1 sm:text-sm">
+          {navItems.map((item) => (
+            <li key={item.href}>
+              <Link
+                href={item.href}
+                className="rounded-md px-1.5 py-1.5 text-slate-600 transition-colors hover:bg-slate-100 hover:text-[#7c3aed] dark:text-slate-300 dark:hover:bg-slate-900 dark:hover:text-[#7c3aed] sm:px-3"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

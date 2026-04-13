@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out",
+    "preview:export": "npm run build && node scripts/gh-pages-preview.mjs && npx --yes serve@latest gh-preview-root -l 3000"
   },
   "homepage": "https://trenditia.github.io/portfolio",
   "dependencies": {
