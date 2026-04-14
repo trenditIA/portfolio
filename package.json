@@ -13,6 +13,7 @@
   },
   "homepage": "https://trenditia.github.io/portfolio",
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "lucide-react": "^0.487.0",
     "next": "^15.2.4",
     "next-themes": "^0.4.6",
