@@ -1,11 +1,15 @@
 import type { Locale } from "@/context/language-context";
 
+export const CV_BY_LOCALE: Record<Locale, string> = {
+  es: "/cv/CV_LucasOviedo_ES.pdf",
+  en: "/cv/CV_LucasOviedo_EN.pdf",
+};
+
 export const LINKS = {
   linkedin:
     "https://www.linkedin.com/in/lucas-mart%C3%ADn-oviedo-79a012131/",
   github: "https://github.com/trenditIA",
   email: "lucasoviedolucas@gmail.com",
-  cv: "/cv/CV_LucasOviedo_ES.pdf",
 } as const;
 
 export type LText = { es: string; en: string };

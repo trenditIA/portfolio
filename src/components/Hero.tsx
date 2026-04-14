@@ -2,23 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useState } from "react";
-import { LINKS } from "@/data/portfolio";
+import { CV_BY_LOCALE, LINKS } from "@/data/portfolio";
 import { useLanguage } from "@/context/language-context";
 import { publicUrl } from "@/lib/publicUrl";
 import { getUi } from "@/messages/ui";
 
-const PROFILE_PRIMARY = publicUrl("/image_0.png");
-const PROFILE_FALLBACK = "https://i.ibb.co/pvJzJyBB/myFace.webp";
+const PROFILE_IMAGE = publicUrl("/images/myFace.webp");
 
 export function Hero() {
   const { locale } = useLanguage();
   const m = getUi(locale);
-  const [profileSrc, setProfileSrc] = useState(PROFILE_PRIMARY);
-
-  const onProfileError = useCallback(() => {
-    setProfileSrc(PROFILE_FALLBACK);
-  }, []);
 
   return (
     <section
@@ -30,13 +23,12 @@ export function Hero() {
           <div className="relative mb-6 h-40 w-40 shrink-0 rounded-full ring-4 ring-[#7c3aed]/85 sm:h-48 sm:w-48">
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 ring-2 ring-slate-200 transition-[box-shadow] duration-300 hover:shadow-[0_0_0_1px_#7c3aed33,0_0_40px_-10px_#7c3aed55] dark:from-slate-800 dark:to-slate-900 dark:ring-slate-800 dark:hover:shadow-[0_0_0_1px_#7c3aed33,0_0_40px_-10px_#7c3aed66]" />
             <Image
-              src={profileSrc}
+              src={PROFILE_IMAGE}
               alt="Lucas Oviedo"
               width={192}
               height={192}
               priority
-              unoptimized={profileSrc.startsWith("http")}
-              onError={onProfileError}
+              unoptimized
               className="relative z-10 h-full w-full rounded-full object-cover"
             />
           </div>
@@ -67,7 +59,7 @@ export function Hero() {
               {m.hero.contact}
             </Link>
             <Link
-              href={LINKS.cv}
+              href={CV_BY_LOCALE[locale]}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:border-[#7c3aed] hover:text-[#7c3aed] dark:border-slate-600 dark:bg-transparent dark:text-slate-200"
